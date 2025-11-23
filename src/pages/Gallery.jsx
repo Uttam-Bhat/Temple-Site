@@ -22,26 +22,24 @@ const Gallery = () => {
     },
     {
       id: 2,
-      name: "Rama Navami",
-      title: "Rama Navami Celebrations",
-      coverImage: "https://via.placeholder.com/400x300/718096/ffffff?text=Rama+Navami",
+      name: "Vanabhojana 2025",
+      title: "Vanabhojana 2025",
+      coverImage: "https://via.placeholder.com/400x300/718096/ffffff?text=Vanabhojana+2025",
       images: [
-        "https://via.placeholder.com/800x600/718096/ffffff?text=Rama+Navami+1",
-        "https://via.placeholder.com/800x600/4a5568/ffffff?text=Rama+Navami+2",
-        "https://via.placeholder.com/800x600/2d3748/ffffff?text=Rama+Navami+3"
+        "https://via.placeholder.com/800x600/718096/ffffff?text=Vanabhojana+2025+1",
+        "https://via.placeholder.com/800x600/4a5568/ffffff?text=Vanabhojana+2025+2",
+        "https://via.placeholder.com/800x600/2d3748/ffffff?text=Vanabhojana+2025+3"
       ]
     },
     {
       id: 3,
-      name: "Krishna Janmashtami",
-      title: "Krishna Janmashtami Festival",
-      coverImage: "https://via.placeholder.com/400x300/2d3748/ffffff?text=Janmashtami",
+      name: "Bhajane Ekaha",
+      title: "Bhajane Ekaha",
+      coverImage: "https://via.placeholder.com/400x300/2d3748/ffffff?text=Bhajane+Ekaha",
       images: [
-        "https://via.placeholder.com/800x600/2d3748/ffffff?text=Janmashtami+1",
-        "https://via.placeholder.com/800x600/1a202c/ffffff?text=Janmashtami+2",
-        "https://via.placeholder.com/800x600/4a5568/ffffff?text=Janmashtami+3",
-        "https://via.placeholder.com/800x600/718096/ffffff?text=Janmashtami+4",
-        "https://via.placeholder.com/800x600/2d3748/ffffff?text=Janmashtami+5"
+        "https://via.placeholder.com/800x600/2d3748/ffffff?text=Bhajane+Ekaha+1",
+        "https://via.placeholder.com/800x600/1a202c/ffffff?text=Bhajane+Ekaha+2",
+        "https://via.placeholder.com/800x600/4a5568/ffffff?text=Bhajane+Ekaha+3"
       ]
     },
     {
