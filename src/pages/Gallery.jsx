@@ -10,26 +10,35 @@ const Gallery = () => {
   const events = [
     {
       id: 1,
-      name: "Brahmotsavam",
-      title: "Annual Brahmotsavam Festival",
-      coverImage: "https://via.placeholder.com/400x300/4a5568/ffffff?text=Brahmotsavam",
+      name: "Shree Rama Digvijaya Rath Yatra",
+      title: "Shree Rama Digvijaya Rath Yatra",
+      coverImage: "/images/rama_ratha(main).JPG",
       images: [
-        "https://via.placeholder.com/800x600/4a5568/ffffff?text=Brahmotsavam+1",
-        "https://via.placeholder.com/800x600/718096/ffffff?text=Brahmotsavam+2",
-        "https://via.placeholder.com/800x600/2d3748/ffffff?text=Brahmotsavam+3",
-        "https://via.placeholder.com/800x600/1a202c/ffffff?text=Brahmotsavam+4"
-      ]
+        "/images/Rama_Ratha/DSC_4126.JPG",
+        "/images/Rama_Ratha/DSC_4205.JPG",
+        "/images/Rama_Ratha/DSC_4454.JPG",
+        "/images/Rama_Ratha/DSC_4516.JPG",
+        "/images/Rama_Ratha/DSC_4696.JPG",
+        "/images/Rama_Ratha/DSC_4725.JPG",
+        "/images/Rama_Ratha/DSC_4905.JPG"
+      ],
+      landscapeImages: []
     },
     {
       id: 2,
       name: "Vanabhojana 2025",
       title: "Vanabhojana 2025",
-      coverImage: "https://via.placeholder.com/400x300/718096/ffffff?text=Vanabhojana+2025",
+      coverImage: "/images/vanabhojana(main).jpg",
       images: [
-        "https://via.placeholder.com/800x600/718096/ffffff?text=Vanabhojana+2025+1",
-        "https://via.placeholder.com/800x600/4a5568/ffffff?text=Vanabhojana+2025+2",
-        "https://via.placeholder.com/800x600/2d3748/ffffff?text=Vanabhojana+2025+3"
-      ]
+        "/images/vanabhojana/1000069909.jpg",
+        "/images/vanabhojana/20251109_223840[1].jpg",
+        "/images/vanabhojana/20251110_111034.jpg",
+        "/images/vanabhojana/IMG-20251110-WA0019.jpg",
+        "/images/vanabhojana/IMG-20251110-WA0028.jpg",
+        "/images/vanabhojana/IMG-20251110-WA0078.jpg",
+        "/images/vanabhojana/IMG-20251110-WA0093.jpg"
+      ],
+      landscapeImages: []
     },
     {
       id: 3,
@@ -53,36 +62,47 @@ const Gallery = () => {
     },
     {
       id: 4,
-      name: "Deepavali",
-      title: "Deepavali Celebrations",
-      coverImage: "https://via.placeholder.com/400x300/1a202c/ffffff?text=Deepavali",
+      name: "Anantha Chaturdashi Vrata",
+      title: "Anantha Chaturdashi Vrata",
+      coverImage: "/images/nopi(main).JPG",
       images: [
-        "https://via.placeholder.com/800x600/1a202c/ffffff?text=Deepavali+1",
-        "https://via.placeholder.com/800x600/4a5568/ffffff?text=Deepavali+2"
-      ]
+        "/images/nopi(2025)/DSC_7271.JPG",
+        "/images/nopi(2025)/DSC_7350.JPG",
+        "/images/nopi(2025)/DSC_7403.JPG",
+        "/images/nopi(2025)/DSC_7412.JPG",
+        "/images/nopi(2025)/DSC_7428.JPG",
+        "/images/nopi(2025)/DSC_7475.JPG"
+      ],
+      landscapeImages: []
     },
     {
       id: 5,
-      name: "Temple Inauguration",
-      title: "Temple Inauguration Ceremony",
-      coverImage: "https://via.placeholder.com/400x300/4a5568/ffffff?text=Inauguration",
+      name: "Varmahalakshmi Vrata",
+      title: "Varmahalakshmi Vrata",
+      coverImage: "/images/mahalakshmi(main).jpg",
       images: [
-        "https://via.placeholder.com/800x600/4a5568/ffffff?text=Inauguration+1",
-        "https://via.placeholder.com/800x600/718096/ffffff?text=Inauguration+2",
-        "https://via.placeholder.com/800x600/2d3748/ffffff?text=Inauguration+3"
-      ]
+        "/images/Varamahalakshmi/FB_IMG_1763917685215.jpg",
+        "/images/Varamahalakshmi/FB_IMG_1763917694151.jpg",
+        "/images/Varamahalakshmi/FB_IMG_1763917700410.jpg",
+        "/images/Varamahalakshmi/FB_IMG_1763917715033.jpg",
+        "/images/Varamahalakshmi/FB_IMG_1763917723740.jpg"
+      ],
+      landscapeImages: []
     },
     {
       id: 6,
-      name: "Annual Function",
-      title: "Annual Temple Function",
-      coverImage: "https://via.placeholder.com/400x300/718096/ffffff?text=Annual+Function",
+      name: "Ganesha Chaturthi",
+      title: "Ganesha Chaturthi",
+      coverImage: "/images/chauti(main).jpg",
       images: [
-        "https://via.placeholder.com/800x600/718096/ffffff?text=Annual+1",
-        "https://via.placeholder.com/800x600/2d3748/ffffff?text=Annual+2",
-        "https://via.placeholder.com/800x600/1a202c/ffffff?text=Annual+3",
-        "https://via.placeholder.com/800x600/4a5568/ffffff?text=Annual+4"
-      ]
+        "/images/Ganesh_chaturthi/20250827_102935[1].jpg",
+        "/images/Ganesh_chaturthi/20250827_102944[1].jpg",
+        "/images/Ganesh_chaturthi/20250827_103617[1].jpg",
+        "/images/Ganesh_chaturthi/IMG-20250827-WA0011.jpg",
+        "/images/Ganesh_chaturthi/IMG-20250827-WA0013.jpg",
+        "/images/Ganesh_chaturthi/IMG-20250827-WA0020.jpg"
+      ],
+      landscapeImages: []
     }
   ]
 
@@ -116,6 +136,7 @@ const Gallery = () => {
                         src={event.coverImage} 
                         alt={event.name}
                         className="gallery-event-image"
+                        loading="lazy"
                       />
                     </div>
                     <div className="gallery-event-name">
@@ -148,6 +169,7 @@ const Gallery = () => {
                         src={image} 
                         alt={`${selectedEvent.name} ${index + 1}`}
                         className="gallery-event-photo"
+                        loading="lazy"
                       />
                     </div>
                   );
