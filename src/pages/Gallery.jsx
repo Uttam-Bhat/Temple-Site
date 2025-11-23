@@ -37,9 +37,15 @@ const Gallery = () => {
       title: "Bhajane Ekaha",
       coverImage: "/images/Bhajana-2025(main).jpg",
       images: [
-        "https://via.placeholder.com/800x600/2d3748/ffffff?text=Bhajane+Ekaha+1",
-        "https://via.placeholder.com/800x600/1a202c/ffffff?text=Bhajane+Ekaha+2",
-        "https://via.placeholder.com/800x600/4a5568/ffffff?text=Bhajane+Ekaha+3"
+        "/images/bhajana-2025/IMG-20251116-WA0020.jpg",
+        "/images/bhajana-2025/IMG-20251116-WA0060.jpg",
+        "/images/bhajana-2025/IMG-20251116-WA0061.jpg",
+        "/images/bhajana-2025/IMG-20251116-WA0062.jpg",
+        "/images/bhajana-2025/IMG_20251117_082728.jpg",
+        "/images/bhajana-2025/20251117_164919.jpg",
+        "/images/bhajana-2025/20251117_115558.heic",
+        "/images/bhajana-2025/20251117_123909.heic",
+        "/images/bhajana-2025/IMG_0569.HEIC"
       ]
     },
     {
