@@ -1,0 +1,70 @@
+.vardhanthi-section {
+  padding: 4rem 0;
+  background: var(--bg-white);
+}
+
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.event-image-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+}
+
+.event-image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.event-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+/* TODO: Adjust object-position if needed based on your event images */
+/* Example: object-position: center top; for images with important content at top */
+
+.event-image-card:hover .event-image {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .vardhanthi-section {
+    padding: 3rem 0;
+  }
+
+  .event-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .event-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .event-image {
+    height: 220px;
+  }
+}
+

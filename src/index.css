@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #800000;
+  --secondary-color: #8B0000;
+  --accent-color: #A52A2A;
+  --text-dark: #800000;
+  --text-light: #8B0000;
+  --bg-yellow: #F5E6D3;
+  --bg-yellow-light: #FEF9F3;
+  --bg-yellow-dark: #E8D5B7;
+  --bg-white: #ffffff;
+  --border-color: #D4A574;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: var(--text-dark);
+  background-color: var(--bg-yellow-light);
+  background-image: url('/images/svt_final(without bg).png');
+  background-size: 60% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/svt_final(without bg).png');
+  background-size: 60% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: 0;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 80% auto;
+  }
+  
+  body::before {
+    background-size: 80% auto;
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 90% auto;
+  }
+  
+  body::before {
+    background-size: 90% auto;
+    opacity: 0.3;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.title-highlight {
+  color: var(--secondary-color);
+}
+
+.section-description {
+  text-align: center;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
