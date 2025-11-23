@@ -41,11 +41,14 @@ const Gallery = () => {
         "/images/bhajana-2025/IMG-20251116-WA0060.jpg",
         "/images/bhajana-2025/IMG-20251116-WA0061.jpg",
         "/images/bhajana-2025/IMG-20251116-WA0062.jpg",
+        "/images/bhajana-2025/20251117_115558.jpg",
+        "/images/bhajana-2025/20251117_123909.jpg",
         "/images/bhajana-2025/IMG_20251117_082728.jpg",
-        "/images/bhajana-2025/20251117_164919.jpg",
-        "/images/bhajana-2025/20251117_115558.heic",
-        "/images/bhajana-2025/20251117_123909.heic",
-        "/images/bhajana-2025/IMG_0569.HEIC"
+        "/images/bhajana-2025/20251117_164919.jpg"
+      ],
+      landscapeImages: [
+        "/images/bhajana-2025/IMG_20251117_082728.jpg",
+        "/images/bhajana-2025/20251117_164919.jpg"
       ]
     },
     {
@@ -134,15 +137,21 @@ const Gallery = () => {
               </div>
               
               <div className="gallery-event-photos">
-                {selectedEvent.images.map((image, index) => (
-                  <div key={index} className="gallery-event-photo-wrapper">
-                    <img 
-                      src={image} 
-                      alt={`${selectedEvent.name} ${index + 1}`}
-                      className="gallery-event-photo"
-                    />
-                  </div>
-                ))}
+                {selectedEvent.images.map((image, index) => {
+                  const isLandscape = selectedEvent.landscapeImages?.includes(image);
+                  return (
+                    <div 
+                      key={index} 
+                      className={`gallery-event-photo-wrapper ${isLandscape ? 'landscape-photo' : ''}`}
+                    >
+                      <img 
+                        src={image} 
+                        alt={`${selectedEvent.name} ${index + 1}`}
+                        className="gallery-event-photo"
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </>
           )}
