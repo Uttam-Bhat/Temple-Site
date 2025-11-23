@@ -35,7 +35,7 @@ const Gallery = () => {
       id: 3,
       name: "Bhajane Ekaha",
       title: "Bhajane Ekaha",
-      coverImage: "https://via.placeholder.com/400x300/2d3748/ffffff?text=Bhajane+Ekaha",
+      coverImage: "/images/Bhajana-2025(main).jpg",
       images: [
         "https://via.placeholder.com/800x600/2d3748/ffffff?text=Bhajane+Ekaha+1",
         "https://via.placeholder.com/800x600/1a202c/ffffff?text=Bhajane+Ekaha+2",
