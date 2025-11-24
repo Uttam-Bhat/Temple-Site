@@ -57,13 +57,6 @@ const Direction = () => {
               ></iframe>
             </div>
 
-            <p className="direction-intro">
-              Molkod is a serene island village on the banks of the Sharavati
-              River. The community traditionally relied on water transport, but
-              recent road connectivity now links devotees smoothly with nearby
-              towns. Use the guide below to plan your journey.
-            </p>
-
             <div className="direction-sections">
               {transportSections.map((section) => (
                 <div className="direction-section" key={section.title}>
