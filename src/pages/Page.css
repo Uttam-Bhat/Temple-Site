@@ -1611,13 +1611,26 @@
 
 .direction-sections {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
 .direction-section {
-  padding-left: 1rem;
-  border-left: 4px solid var(--primary-color);
+  flex: 1 1 calc(50% - 0.75rem);
+  min-width: 280px;
+  padding: 1.5rem;
+  background: var(--bg-white);
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.direction-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary-color);
 }
 
 .direction-section-header {
@@ -1655,6 +1668,22 @@
   padding-left: 1.25rem;
   color: var(--text-dark);
   line-height: 1.6;
+}
+
+.direction-section-note {
+  margin-top: 1rem;
+  padding: 0.875rem 1rem;
+  background: var(--bg-yellow-light);
+  border-left: 3px solid var(--primary-color);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.direction-section-note strong {
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 
@@ -1789,6 +1818,14 @@
 
   .direction-map-embed {
     height: 320px;
+  }
+
+  .direction-sections {
+    flex-direction: column;
+  }
+
+  .direction-section {
+    flex: 1 1 100%;
   }
 
   .darshana-video-wrapper {

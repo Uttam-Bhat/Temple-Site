@@ -13,36 +13,26 @@ const transportSections = [
     title: "By Air",
     icon: FaPlane,
     description:
-      "The nearest designated airport is Mangalore (IXE), about 175 km away, followed by Goa (GOI) at 195 km. Both airports connect to Molkod via the national highway network, making the onward road journey comfortable.",
+      "The nearest airport to the temple is Mangalore International Airport, located approximately 121 km away. The next closest is Goa International Airport, which is about 235 km from the temple.",
   },
   {
     title: "By Train",
     icon: FaTrain,
     description:
-      "Manki railway station (13 km) and Honnavar railway station (22 km) are the closest railheads. Each station enjoys NH connectivity, and taxis or autos are readily available for the last-mile ride to Molkod.",
+      "The nearest railway station to the temple is Bijoor Railway Station, located around 2.3 km away. The next closest is Byndoor Mookambika Road Railway Station, which is approximately 7.4 km from the temple. From both railway stations, autos and taxis are easily available, and there is convenient connectivity to the National Highway.",
   },
   {
-    title: "By Boat",
-    icon: FaShip,
-    description:
-      "Commercial motorboats ferry devotees between Honnavar and Molkod every day, carrying both passengers and materials. Boats depart Honnavar at 12:15 PM (arriving Molkod 1:15 PM) and return from Molkod at 8:10 AM (reaching Honnavar 9:15 AM).",
-  },
-  {
-    title: "By Road & Bus",
+    title: "By Bus",
     icon: FaBus,
     description:
-      "Honnavar (16 km) is the nearest designated bus stand. Local buses halt at Idagunji (Paje), just 1.5 km from Molkod, with seven services operating daily in both directions.",
-    listTitle: "Daily Bus Timings",
-    listItems: [
-      "Honnavar → Idagunji: 07:30, 09:30, 11:00, 12:45, 15:00, 17:00",
-      "Idagunji → Honnavar: 07:00, 08:15, 10:00, 11:45, 13:15, 15:30, 17:00",
-    ],
+      "The nearest designated bus stand is Byndoor Bus Stand, located around 6 km from the temple. The nearest local bus stand is Naikanakatte Bus Stand, situated approximately 0.5 km (half a kilometer) from the temple. Buses are available at both bus stands at regular intervals, making travel to the temple convenient and easily accessible",
   },
   {
-    title: "Other Modes",
+    title: "By Road",
     icon: FaRoute,
     description:
-      "Personal vehicles can approach Molkod from Gunavante or Idagunji roads. Visitors may also travel to Gunavante or Manki and hire autos to reach the temple island.",
+      "The temple is located adjacent to National Highway NH-66, ensuring excellent road connectivity. The temple is also conveniently accessible by personal vehicles, with smooth highway access and ample parking facilities nearby. Public and private transportation facilities are easily available from surrounding towns and cities.",
+    note: "As there is a flyover in front of the temple, visitors should use the service road to reach the temple.",
   },
 ];
 
@@ -91,6 +81,11 @@ const Direction = () => {
                         ))}
                       </ul>
                     </>
+                  )}
+                  {section.note && (
+                    <div className="direction-section-note">
+                      <strong>Note:</strong> {section.note}
+                    </div>
                   )}
                 </div>
               ))}

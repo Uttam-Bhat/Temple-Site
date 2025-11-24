@@ -20,21 +20,18 @@ const About = () => {
             <div className="about-description-wrapper">
               <p className="about-description">
                 {/* TODO: Replace with actual temple description */}
-                Our temple is located in a beautiful and serene location, surrounded by natural 
-                beauty. The temple has been a center of spiritual devotion for many years, 
-                attracting devotees from far and wide. The architecture reflects traditional 
-                design principles while maintaining modern facilities for visitors.
+               Sri Venkataramana Temple is located in the small town of Naikanakatte, situated in the Byndoor Taluk of Udupi District along the coastal belt of Karnataka. The temple stands beside National Highway NH-66 and is dedicated to Lord Venkataramana. It is administered by a committee of 15 members under the guidance and supervision of Shree Samsthan Gokarn Parthagali Jeevottam Math.
               </p>
               {isExpanded && (
                 <>
                   <p className="about-description">
-                    The temple complex includes the main sanctum, prayer halls, and facilities for 
-                    various religious ceremonies and activities. We welcome all devotees to visit 
-                    and experience the divine atmosphere.
+                    The temple has a history of more than 200 years and was rebuilt in the year 2016. The Punar Pratishtapana Mahotsava was celebrated in the divine presence of the then Peethadipathi of Shree Samsthan Gokarn Parthagali Jeevottam Math, Srimad Vidyadhiraja Teertha Swamiji. The Pratishtapana of the Lord and the Kalasha Sthapana of the renovated temple were performed by the divine hands of Srimad Vidyadhiraja Teertha Swamiji.
                   </p>
-                  {/* TODO: Add more content here if needed */}
                   <p className="about-description">
-                    {/* Additional content can be added here */}
+                    Naikanakatte is a village that is home to two temples dedicated to the same presiding deity, Lord Venkataramana, and both belong to our GSB Samaj. One is our Sri Venkataramana Temple, which is under the Shree Samsthan Gokarn Parthagali Jeevottam Math, and the other is the Shri Lakshmi Venkataramana Temple, which comes under the Shree Kashi Math Samsthan and is managed by the Naikanakatte Avadhani Family. These two temples are regarded as the two eyes of the GSB Samaj Bandhavas of Naikanakatte.
+                  </p>
+                  <p className="about-description">
+                    A unique and divine highlight of Naikanakatte is that during every temple Utsava, the Lord Venkataramana from both temples is taken in the same Pallakki, followed by the grand Nagarotsava of the Ubhaya Venkataramana. Witnessing this sacred procession is a deeply devotional and joy-filled spiritual experience for all the Samaj Bandhavas.
                   </p>
                 </>
               )}
