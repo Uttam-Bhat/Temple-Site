@@ -1034,8 +1034,8 @@
 }
 
 .upi-qr-placeholder {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   background: var(--bg-white);
   border: 2px dashed var(--border-color);
   border-radius: 12px;
@@ -1045,6 +1045,13 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem;
+}
+
+.upi-qr-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .qr-icon {
@@ -1446,10 +1453,11 @@
 
 .gallery-event-subtitle {
   color: var(--text-dark);
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
   margin: 0;
   opacity: 0.8;
+  line-height: 1.6;
 }
 
 .gallery-event-photos {
@@ -1507,6 +1515,28 @@
 
 .gallery-event-photo-wrapper:hover .gallery-event-photo {
   transform: scale(1.05);
+}
+
+.gallery-event-follow {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 2px dashed var(--border-color);
+  background: var(--bg-white);
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.gallery-event-follow a {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.gallery-event-follow a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

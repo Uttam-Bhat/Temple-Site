@@ -21,8 +21,8 @@ const Footer = () => {
               <FaPhone className="footer-icon contact-icon" />
               <span>
                 {/* TODO: Replace with actual contact numbers */}
-                <a href="tel:+911234567890">+91 1234567890</a> | 
-                <a href="tel:+919876543210"> +91 9876543210</a>
+                <a href="tel:+911234567890">+91 9480621737</a> | 
+                <a href="tel:+919876543210"> +91 9740088055</a>
               </span>
             </p>
             <p className="footer-email">
@@ -40,8 +40,8 @@ const Footer = () => {
               Darshan Timing
             </h4>
             <p className="footer-timing">
-              <span className="timing-label morning">Morning:</span> <span className="timing-value">6:00 AM – 12:30 PM</span><br />
-              <span className="timing-label evening">Evening:</span> <span className="timing-value">5:00 PM – 8:15 PM</span>
+              <span className="timing-label morning">Morning:</span> <span className="timing-value">10:00 AM – 12:00 PM</span><br />
+              <span className="timing-label evening">Evening:</span> <span className="timing-value">6:00 PM – 8:00 PM</span>
             </p>
           </div>
 
@@ -51,9 +51,8 @@ const Footer = () => {
               Pooja Timing
             </h4>
             <p className="footer-timing">
-              <span className="timing-label morning">Morning:</span> <span className="timing-value">6:00 AM – 8:30 AM</span><br />
-              <span className="timing-label afternoon">Afternoon:</span> <span className="timing-value">10:00 AM – 12:00 PM</span><br />
-              <span className="timing-label evening">Evening:</span> <span className="timing-value">7:30 PM – 8:00 PM</span>
+              <span className="timing-label morning">Morning:</span> <span className="timing-value">10:30 AM – 11:30 AM</span><br />
+              <span className="timing-label evening">Evening:</span> <span className="timing-value">6:30 PM – 7:30 PM</span>
             </p>
           </div>
         </div>

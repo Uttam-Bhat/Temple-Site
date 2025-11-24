@@ -83,7 +83,7 @@ const About = () => {
           <Link to="/sevas" className="about-card">
             <div className="about-card-image-wrapper">
               <img 
-                src="/images/temple.jpg" 
+                src="/images/sevas.jpeg" 
                 alt="Sevas"
                 className="about-card-image"
               />

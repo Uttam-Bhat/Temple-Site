@@ -3,63 +3,111 @@ import { FaPhone } from 'react-icons/fa'
 import './Page.css'
 
 const Committee = () => {
-  // TODO: Replace with actual committee member information
   const committeeMembers = [
     {
       id: 1,
       slNo: 1,
-      name: "Committee Member 1",
+      name: "Narayan Shanbhag",
       role: "President",
-      number: "+91 1234567890"
+      number: "+91 8105451480"
     },
     {
       id: 2,
       slNo: 2,
-      name: "Committee Member 2",
+      name: "Prakash Bhat",
       role: "Vice President",
-      number: "+91 1234567891"
+      number: "+91 9972274858"
     },
     {
       id: 3,
       slNo: 3,
-      name: "Committee Member 3",
+      name: "Shrisha Bhat",
       role: "Secretary",
-      number: "+91 1234567892"
+      number: "+91 9740088055"
     },
     {
       id: 4,
       slNo: 4,
-      name: "Committee Member 4",
-      role: "Treasurer",
-      number: "+91 1234567893"
+      name: "Ganesh Pai",
+      role: "Joint Secretary",
+      number: "+91 7715956497"
     },
     {
       id: 5,
       slNo: 5,
-      name: "Committee Member 5",
-      role: "Joint Secretary",
-      number: "+91 1234567894"
+      name: "Ramdas Nayak",
+      role: "Treasurer",
+      number: "+91 8105169905"
     },
     {
       id: 6,
       slNo: 6,
-      name: "Committee Member 6",
+      name: "Damodhar Prabhu",
       role: "Member",
-      number: "+91 1234567895"
+      number: "+91 9663437527"
     },
     {
       id: 7,
       slNo: 7,
-      name: "Committee Member 7",
+      name: "Balakrishna Bhat",
       role: "Member",
-      number: "+91 1234567896"
+      number: "+91 9945991174"
     },
     {
       id: 8,
       slNo: 8,
-      name: "Committee Member 8",
+      name: "Ganesh Rai Prabhu",
       role: "Member",
-      number: "+91 1234567897"
+      number: "+91 7899706104"
+    },
+    {
+      id: 9,
+      slNo: 9,
+      name: "Uday Bhat",
+      role: "Member",
+      number: "+91 9448350479"
+    },
+    {
+      id: 10,
+      slNo: 10,
+      name: "Vinayak Kamath",
+      role: "Member",
+      number: "+91 9591893597"
+    },
+    {
+      id: 11,
+      slNo: 11,
+      name: "Shashi Shenoy",
+      role: "Member",
+      number: "+91 9242717347"
+    },
+    {
+      id: 12,
+      slNo: 12,
+      name: "Vedavyas Prabhu",
+      role: "Member",
+      number: "+91 9741848091"
+    },
+    {
+      id: 13,
+      slNo: 13,
+      name: "Shrinivas Shanbhag",
+      role: "Member",
+      number: "+91 9620295737"
+    },
+    {
+      id: 14,
+      slNo: 14,
+      name: "Uday Kini",
+      role: "Member",
+      number: "+91 9241668778"
+    },
+    {
+      id: 15,
+      slNo: 15,
+      name: "Harish Prabhu",
+      role: "Member",
+      number: "+91 9141229567"
     }
   ]
 

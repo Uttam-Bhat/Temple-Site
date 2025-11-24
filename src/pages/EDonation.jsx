@@ -26,19 +26,19 @@ const EDonation = () => {
                   </div>
                   <div className="detail-row">
                     <span className="detail-label">Account Number:</span>
-                    <span className="detail-value">XXXX XXXX XXXX</span>
+                    <span className="detail-value">8012500100643401</span>
                   </div>
                   <div className="detail-row">
                     <span className="detail-label">IFSC Code:</span>
-                    <span className="detail-value">XXXX0000000</span>
+                    <span className="detail-value">KARB0000801</span>
                   </div>
                   <div className="detail-row">
                     <span className="detail-label">Bank Name:</span>
-                    <span className="detail-value">Bank Name</span>
+                    <span className="detail-value">Karnataka Bank</span>
                   </div>
                   <div className="detail-row">
                     <span className="detail-label">Branch:</span>
-                    <span className="detail-value">Branch Name, City</span>
+                    <span className="detail-value">Uppunda, Byndoor</span>
                   </div>
                 </div>
               </div>
@@ -47,12 +47,15 @@ const EDonation = () => {
                 <h3>UPI Payment</h3>
                 <div className="upi-section">
                   <div className="upi-qr-placeholder">
-                    <FaQrcode className="qr-icon" />
-                    <p>UPI QR Code</p>
+                    <img
+                      src="/images/scanner.jpeg"
+                      alt="UPI QR Code"
+                      className="upi-qr-image"
+                    />
                     <span className="qr-note">Scan to pay via UPI</span>
                   </div>
                   <div className="upi-id">
-                    <strong>UPI ID:</strong> temple@upi
+                    <strong>UPI ID:</strong> 919480621737@kbl
                   </div>
                 </div>
               </div>

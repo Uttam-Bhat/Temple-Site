@@ -28,6 +28,8 @@ const Gallery = () => {
       id: 2,
       name: "Vanabhojana 2025",
       title: "Vanabhojana 2025",
+      subtitle:
+        "Vanabhojana is a yearly celebrated festival marked on the Bahula Panchami of the Karthika Maasa, where the Ubhaya Venkataramana of the two temples go to the vana on the utsava and return, marking the occasion with devotion and tradition.",
       coverImage: "/images/vanabhojana(main).jpg",
       images: [
         "/images/vanabhojana/1000069909.jpg",
@@ -44,6 +46,8 @@ const Gallery = () => {
       id: 3,
       name: "Bhajane Ekaha",
       title: "Bhajane Ekaha",
+      subtitle:
+        "Bhajana Ekaha, celebrated annually on the Ekadashi Tithi of the Karthika Maasa, is marked with deep devotion and joy as bhajakas unite to offer bhajana seva to the Lord for an entire day and night.",
       coverImage: "/images/Bhajana-2025(main).jpg",
       images: [
         "/images/bhajana-2025/IMG-20251116-WA0020.jpg",
@@ -64,6 +68,8 @@ const Gallery = () => {
       id: 4,
       name: "Anantha Chaturdashi Vrata",
       title: "Anantha Chaturdashi Vrata",
+      subtitle:
+        "Anantha Chaturdashi is an annual festival that falls on the Chaturdashi Tithi of the Shukla Paksha in the Bhadrapada Maasa, and it is celebrated each year with immense devotion and joy in worship of Lord Anantha Padmanabha.",
       coverImage: "/images/nopi(main).JPG",
       images: [
         "/images/nopi(2025)/DSC_7271.JPG",
@@ -79,6 +85,8 @@ const Gallery = () => {
       id: 5,
       name: "Varmahalakshmi Vrata",
       title: "Varmahalakshmi Vrata",
+      subtitle:
+        "Varamahalakshmi Festival is an annual celebration observed on the Friday of the Shravana maasa, and it is celebrated every year with great devotion and joy to invoke the blessings of Goddess Lakshmi.",
       coverImage: "/images/mahalakshmi(main).jpg",
       images: [
         "/images/Varamahalakshmi/FB_IMG_1763917685215.jpg",
@@ -91,8 +99,10 @@ const Gallery = () => {
     },
     {
       id: 6,
-      name: "Ganesh Chaturthi is the annual festival that falls on the Chaturthi Tithi of Bhadrapada Maasa, and it is celebrated each year with immense devotion and joy.",
+      name: "Ganesha Chaturthi",
       title: "Ganesha Chaturthi",
+      subtitle:
+        "Ganesha Chaturthi is an annual festival that falls on the Chaturthi Tithi of the Shukla Paksha in the Bhadrapada Maasa, and it is celebrated each year with immense devotion and joy.",
       coverImage: "/images/chauti(main).jpg",
       images: [
         "/images/Ganesh_chaturthi/20250827_102935[1].jpg",
@@ -102,6 +112,33 @@ const Gallery = () => {
         "/images/Ganesh_chaturthi/IMG-20250827-WA0013.jpg",
         "/images/Ganesh_chaturthi/IMG-20250827-WA0020.jpg",
       ],
+      landscapeImages: [],
+    },
+    {
+      id: 7,
+      name: "Ramotsava - 2025",
+      title: "Ramotsava - 2025",
+      subtitle:
+        "Rama Utsava was celebrated at the temple on the occasion of the Prana Pratistha of Ram Lalla in Ayodhya, where the Samaj Bhandhavas united and celebrated with great devotion and enthusiasm.",
+      coverImage: "/images/ramotsav.jpeg",
+      images: [
+        "/images/ram-utsava/WhatsApp Image 2025-11-24 at 8.05.17 PM (1).jpeg",
+        "/images/ram-utsava/WhatsApp Image 2025-11-24 at 8.05.17 PM (2).jpeg",
+        "/images/ram-utsava/WhatsApp Image 2025-11-24 at 8.05.18 PM (1).jpeg",
+        "/images/ram-utsava/WhatsApp Image 2025-11-24 at 8.05.18 PM (2).jpeg",
+        "/images/ram-utsava/WhatsApp Image 2025-11-24 at 8.05.19 PM (1).jpeg",
+        "/images/ram-utsava/WhatsApp Image 2025-11-24 at 8.05.19 PM.jpeg",
+      ],
+      landscapeImages: [],
+    },
+    {
+      id: 8,
+      name: "Prathista Vardanti",
+      title: "Prathista Vardanti",
+      subtitle:
+        "The Vardhanthi Mahotsava is celebrated on the occasion of the anniversary of the establishment of the temple, where a vishesha alankara pooja is performed and santarpane is offered.",
+      coverImage: "/images/vardanti.jpeg",
+      images: [],
       landscapeImages: [],
     },
   ];
@@ -152,7 +189,9 @@ const Gallery = () => {
 
               <div className="gallery-event-header">
                 <h1 className="gallery-event-title">{selectedEvent.title}</h1>
-                <p className="gallery-event-subtitle">{selectedEvent.name}</p>
+                <p className="gallery-event-subtitle">
+                  {selectedEvent.subtitle || selectedEvent.name}
+                </p>
               </div>
 
               <div className="gallery-event-photos">
@@ -175,6 +214,28 @@ const Gallery = () => {
                     </div>
                   );
                 })}
+              </div>
+
+              <div className="gallery-event-follow">
+                <p>
+                  Looking for more photos and updates? Follow us on{" "}
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Instagram
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Facebook
+                  </a>{" "}
+                  for the latest highlights.
+                </p>
               </div>
             </>
           )}
