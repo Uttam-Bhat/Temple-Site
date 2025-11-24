@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import { FaArrowLeft } from 'react-icons/fa'
-import './Page.css'
+import React, { useState } from "react";
+import { FaArrowLeft } from "react-icons/fa";
+import "./Page.css";
 
 const Gallery = () => {
-  const [selectedEvent, setSelectedEvent] = useState(null)
-  
+  const [selectedEvent, setSelectedEvent] = useState(null);
+
   // TODO: Replace these placeholder image paths with actual gallery images
   // Place your gallery images in public/images/gallery/ directory
   const events = [
@@ -20,9 +20,9 @@ const Gallery = () => {
         "/images/Rama_Ratha/DSC_4516.JPG",
         "/images/Rama_Ratha/DSC_4696.JPG",
         "/images/Rama_Ratha/DSC_4725.JPG",
-        "/images/Rama_Ratha/DSC_4905.JPG"
+        "/images/Rama_Ratha/DSC_4905.JPG",
       ],
-      landscapeImages: []
+      landscapeImages: [],
     },
     {
       id: 2,
@@ -36,9 +36,9 @@ const Gallery = () => {
         "/images/vanabhojana/IMG-20251110-WA0019.jpg",
         "/images/vanabhojana/IMG-20251110-WA0028.jpg",
         "/images/vanabhojana/IMG-20251110-WA0078.jpg",
-        "/images/vanabhojana/IMG-20251110-WA0093.jpg"
+        "/images/vanabhojana/IMG-20251110-WA0093.jpg",
       ],
-      landscapeImages: []
+      landscapeImages: [],
     },
     {
       id: 3,
@@ -53,12 +53,12 @@ const Gallery = () => {
         "/images/bhajana-2025/20251117_115558.jpg",
         "/images/bhajana-2025/20251117_123909.jpg",
         "/images/bhajana-2025/IMG_20251117_082728.jpg",
-        "/images/bhajana-2025/20251117_164919.jpg"
+        "/images/bhajana-2025/20251117_164919.jpg",
       ],
       landscapeImages: [
         "/images/bhajana-2025/IMG_20251117_082728.jpg",
-        "/images/bhajana-2025/20251117_164919.jpg"
-      ]
+        "/images/bhajana-2025/20251117_164919.jpg",
+      ],
     },
     {
       id: 4,
@@ -71,9 +71,9 @@ const Gallery = () => {
         "/images/nopi(2025)/DSC_7403.JPG",
         "/images/nopi(2025)/DSC_7412.JPG",
         "/images/nopi(2025)/DSC_7428.JPG",
-        "/images/nopi(2025)/DSC_7475.JPG"
+        "/images/nopi(2025)/DSC_7475.JPG",
       ],
-      landscapeImages: []
+      landscapeImages: [],
     },
     {
       id: 5,
@@ -85,13 +85,13 @@ const Gallery = () => {
         "/images/Varamahalakshmi/FB_IMG_1763917694151.jpg",
         "/images/Varamahalakshmi/FB_IMG_1763917700410.jpg",
         "/images/Varamahalakshmi/FB_IMG_1763917715033.jpg",
-        "/images/Varamahalakshmi/FB_IMG_1763917723740.jpg"
+        "/images/Varamahalakshmi/FB_IMG_1763917723740.jpg",
       ],
-      landscapeImages: []
+      landscapeImages: [],
     },
     {
       id: 6,
-      name: "Ganesha Chaturthi",
+      name: "Ganesh Chaturthi is the annual festival that falls on the Chaturthi Tithi of Bhadrapada Maasa, and it is celebrated each year with immense devotion and joy.",
       title: "Ganesha Chaturthi",
       coverImage: "/images/chauti(main).jpg",
       images: [
@@ -100,21 +100,21 @@ const Gallery = () => {
         "/images/Ganesh_chaturthi/20250827_103617[1].jpg",
         "/images/Ganesh_chaturthi/IMG-20250827-WA0011.jpg",
         "/images/Ganesh_chaturthi/IMG-20250827-WA0013.jpg",
-        "/images/Ganesh_chaturthi/IMG-20250827-WA0020.jpg"
+        "/images/Ganesh_chaturthi/IMG-20250827-WA0020.jpg",
       ],
-      landscapeImages: []
-    }
-  ]
+      landscapeImages: [],
+    },
+  ];
 
   const handleEventClick = (event) => {
-    setSelectedEvent(event)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+    setSelectedEvent(event);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const handleBackClick = () => {
-    setSelectedEvent(null)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+    setSelectedEvent(null);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className="page">
@@ -123,25 +123,23 @@ const Gallery = () => {
           {!selectedEvent ? (
             <>
               <h1 className="page-title">Gallery</h1>
-              
+
               <div className="gallery-events-grid">
                 {events.map((event) => (
-                  <div 
-                    key={event.id} 
+                  <div
+                    key={event.id}
                     className="gallery-event-card"
                     onClick={() => handleEventClick(event)}
                   >
                     <div className="gallery-event-image-wrapper">
-                      <img 
-                        src={event.coverImage} 
+                      <img
+                        src={event.coverImage}
                         alt={event.name}
                         className="gallery-event-image"
                         loading="lazy"
                       />
                     </div>
-                    <div className="gallery-event-name">
-                      {event.name}
-                    </div>
+                    <div className="gallery-event-name">{event.name}</div>
                   </div>
                 ))}
               </div>
@@ -151,22 +149,25 @@ const Gallery = () => {
               <button className="gallery-back-btn" onClick={handleBackClick}>
                 <FaArrowLeft /> Back to Events
               </button>
-              
+
               <div className="gallery-event-header">
                 <h1 className="gallery-event-title">{selectedEvent.title}</h1>
                 <p className="gallery-event-subtitle">{selectedEvent.name}</p>
               </div>
-              
+
               <div className="gallery-event-photos">
                 {selectedEvent.images.map((image, index) => {
-                  const isLandscape = selectedEvent.landscapeImages?.includes(image);
+                  const isLandscape =
+                    selectedEvent.landscapeImages?.includes(image);
                   return (
-                    <div 
-                      key={index} 
-                      className={`gallery-event-photo-wrapper ${isLandscape ? 'landscape-photo' : ''}`}
+                    <div
+                      key={index}
+                      className={`gallery-event-photo-wrapper ${
+                        isLandscape ? "landscape-photo" : ""
+                      }`}
                     >
-                      <img 
-                        src={image} 
+                      <img
+                        src={image}
                         alt={`${selectedEvent.name} ${index + 1}`}
                         className="gallery-event-photo"
                         loading="lazy"
@@ -180,10 +181,7 @@ const Gallery = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Gallery
-
-
-
+export default Gallery;
