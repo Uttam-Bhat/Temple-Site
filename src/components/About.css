@@ -67,6 +67,18 @@
   margin-top: 3rem;
 }
 
+.about-extra {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(212, 165, 116, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .about-card {
   display: flex;
   flex-direction: column;
@@ -305,6 +317,11 @@
     padding: 1.15rem 0.875rem;
     font-size: 1.05rem;
   }
+
+  .about-extra {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 968px) {
@@ -338,6 +355,10 @@
   .about-card-title {
     padding: 1rem 0.75rem;
     font-size: 1rem;
+  }
+
+  .about-extra {
+    padding: 1.25rem;
   }
 }
 
