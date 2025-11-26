@@ -38,87 +38,46 @@ const AnnualFunctions = () => {
     },
     {
       id: 5,
-      name: "Vanabhojana Utsava",
-      shortDescription: "Vanabhojana is the main Utsava held at the temple on Karthika Vadya Panchami. The Utsava moorti of Shri Lakshmivenkatesh and Hanumaan are decorated and taken to the Vana for Dhatri Havana, followed by serving Maha anna prasadm.",
-      fullDescription: [
-        "Vanabhojana is the main Utsava held at the temple on Karthika Vadya Panchami. The Utsava moorti of Shri Lakshmivenkatesh and Hanumaan are decorated and taken to the Vana for Dhatri Havana, followed by serving Maha anna prasadm.",
-        "The vana is now artificially created at the temple entrance. Decades ago, there was a Vanabhojana Katte. The utsava is conducted over two days.",
-        "The main attraction is Lords Palakki savari, taken to many Hindu devotees' homes in Molkod. Devotees decorate their homes with themes, and Chappara, Torana, Rangoli, Phalavali, and Flowers are key attractions. Prasanna Pooja is held, and special naivedyam is offered and distributed.",
-        "The savari goes to various Katte(s) including Rahu Katte, old Vanabhojana Katte, Kusta Pai Gunda, R S Pai Katte, and Avala Katte.",
-        "The savari begins around 4 PM, and after completing 'Sthali' at all places, it reaches 'Kurinja' (a 'Teru-like structure' without wheels) around 11 PM. Pooja is offered, crackers are burst, and Yakshagana Dashavatar Seva begins.",
-        "Lord Mukhyaprana is said to be fond of Costal Folk Art Yakshagana. Devotees offer Yakshagana seva to Lord Hanumanta for wishes. The monetary aspect of Yakshagana Seva is managed by Bhaskar Bhat and Non-Archaka Acharya."
-      ]
+      name: "Samoohika Chudi Poojana",
+      shortDescription: "Samoohika Chudi Poojana is celebrated in the temple during the month of Shravana. Married women of the community perform this sacred observance to honor Surya Deva and the Tulsi plant, symbolizing unity, love, and devotion within the family.",
+      expandedText: " As part of the tradition, women prepare chudis, which are bundles made of herbs and flowers, and offer them with devotion to Surya Deva, the Tulsi plant, and Lord Venkataramana. After offering the chudis, they exchange them among themselves and seek the blessings of the Lord and the elders. In the afternoon, the Mahapooja of the Lord is performed, followed by Santarpane. The entire program is observed with deep devotion, spiritual warmth, and great joy by all the Samaj Bandhavas."
     },
     {
       id: 6,
-      name: "Brahmotsavam",
-      shortDescription: "Brahmotsavam is the grand annual festival celebrated with immense devotion and grandeur over ten days. The festival begins with the hoisting of the Garuda flag, followed by daily processions of the deities on various vahanas.",
-      fullDescription: [
-        "Brahmotsavam is the grand annual festival celebrated with immense devotion and grandeur over ten days. The festival begins with the hoisting of the Garuda flag, followed by daily processions of the deities on various vahanas (vehicles) like Sesha Vahana, Hamsa Vahana, Simha Vahana, and more.",
-        "Each day features special poojas, abhishekam, and archana. The highlight is the Rathotsavam (chariot festival) where the deities are taken in a grand procession.",
-        "Cultural programs including classical music, dance performances, and spiritual discourses are organized. Devotees from far and wide participate in the festivities, seeking divine blessings. The festival concludes with the lowering of the flag and special poojas."
-      ]
+      name: "Sri Krishna Janmashtami",
+      shortDescription: "Sri Krishna Janmashtami is celebrated every year in the temple with great devotion to commemorate the divine birth of Lord Sri Krishna, who incarnated to uphold dharma and protect the righteous. This festival falls on the Ashtami Tithi of the Krishna Paksha in the Shravana or Bhadrapada Maasa.",
+      expandedText: " Devotees observe a full-day fast, and in the evening, the Sahasra Tulasi Dala Samarpane is performed to Lord Krishna by the devotees under the guidance of the Archaka, followed by the Mahapooja and Mangalarathi offered to the Lord. On this day, every devotee brings a special Prasada prepared in their homes and offers it to Lord Krishna, after which it is distributed to everyone as divine blessings. The entire festival is celebrated with full devotion, joy, and deep spiritual enthusiasm by all the Samaj Bandhavas."
     },
     {
       id: 7,
-      name: "Rama Navami",
-      shortDescription: "Rama Navami marks the birth anniversary of Lord Rama, the seventh avatar of Lord Vishnu. The day begins with special abhishekam to the deity with sacred waters, milk, honey, and other holy substances.",
-      fullDescription: [
-        "Rama Navami marks the birth anniversary of Lord Rama, the seventh avatar of Lord Vishnu. The day begins with special abhishekam to the deity with sacred waters, milk, honey, and other holy substances.",
-        "Continuous chanting of Rama Nama and recitation of Ramayana takes place throughout the day. Special archana with 108 names of Lord Rama is performed. Devotees observe fasting and participate in bhajan sessions.",
-        "The temple is decorated with flowers and special lighting. Prasadam distribution includes panakam (jaggery water) and vadapappu (soaked moong dal). Spiritual discourses on the life and teachings of Lord Rama are conducted. The evening concludes with aarti and special darshan."
-      ]
+      name: "Ganesh Chaturthi",
+      shortDescription: "Ganesh Chaturthi is celebrated every year in the temple with great devotion to honor Lord Ganesha, the remover of obstacles and the source of wisdom and prosperity. This festival falls on the Chaturthi Tithi of the Shukla Paksha in the Bhadrapada Maasa.",
+      expandedText: " The festival begins with bringing the idol of Lord Ganesha to the temple, followed by the Dharmika Vidhi-Vidhanas performed to Lord Ganesha. A beautiful Vishesha Alankara is offered to both Lord Ganapathi and Lord Venkataramana, after which the Mahapooja and Mangalarathi are performed with devotion. After the rituals, Prasada and Santarpane are offered to all devotees. Later in the evening, Bhajana Seva and Mahapooja are performed, and the day concludes with the Visarjana of the Ganesha idol. The festival is observed with immense devotion, joy, and unity as everyone seeks the blessings of Lord Ganapathi for peace, prosperity, and well-being."
     },
     {
       id: 8,
-      name: "Krishna Janmashtami",
-      shortDescription: "Krishna Janmashtami celebrates the birth of Lord Krishna, the eighth avatar of Lord Vishnu. The temple remains open from early morning until midnight with special decorations and celebrations.",
-      fullDescription: [
-        "Krishna Janmashtami celebrates the birth of Lord Krishna, the eighth avatar of Lord Vishnu. The temple remains open from early morning until midnight.",
-        "Special decorations include a beautifully decorated cradle (jhula) for baby Krishna. The day features continuous bhajans, kirtans, and devotional songs. At midnight, the exact time of Krishna's birth, special abhishekam and pooja are performed.",
-        "Devotees break their fast after midnight darshan. The temple is adorned with flowers, lights, and traditional decorations. Cultural programs including dance dramas depicting Krishna's childhood leelas are organized. Special prasadam including butter, fruits, and sweets are distributed. The celebration continues with night-long prayers and devotional activities."
-      ]
+      name: "Satya Ganapathi Vratha",
+      shortDescription: "Satya Ganapathi Vratha is celebrated annually in the temple on the Chathurthi Tithi of the Shravana Maasa, also known as Angaraka Sankashtahara Chathurthi. The evening program is devoted to Lord Ganapathi with collective prayers and rituals.",
+      expandedText: " The program begins with Devata Prarthane, Kalasha Sthapane, and other Vidhi-Vidhanas offered to Lord Ganapathi. Bhajana Seva is rendered by devotees to the Lord, followed by the Mahapooja performed to both Lord Ganapathi and Lord Venkataramana. Santarpane is carried out thereafter, and the entire festival is celebrated by the Samaj Bandhavas with unity, devotion, and great spiritual enthusiasm."
     },
     {
       id: 9,
-      name: "Navaratri",
-      shortDescription: "Navaratri is a nine-night festival dedicated to the worship of Goddess Durga in her various forms. Each day is dedicated to a different form of the Goddess with special poojas and celebrations.",
-      fullDescription: [
-        "Navaratri is a nine-night festival dedicated to the worship of Goddess Durga in her various forms. Each day is dedicated to a different form of the Goddess - Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri, and Siddhidatri.",
-        "Daily special poojas, abhishekam, and archana are performed. The temple is beautifully decorated with flowers and traditional motifs. Garba and Dandiya programs are organized in the evenings. Devotees observe fasting and perform special prayers.",
-        "On the eighth day (Ashtami), special homam and yagna are conducted. The ninth day (Mahanavami) features grand celebrations with cultural programs. The festival concludes on the tenth day (Vijayadashami) with special poojas and distribution of prasadam."
-      ]
+      name: "Anantha Chaturdashi (Nopi)",
+      shortDescription: "Anantha Chaturdashi, also referred to as Nopi, is celebrated every year in the temple with deep devotion to Lord Anantha, seeking His divine blessings for protection, prosperity, and well-being. The festival falls on the Chaturdashi Tithi of the Shukla Paksha in the Bhadrapada Maasa.",
+      expandedText: " Celebrations begin with Devatha Prarthane, followed by the Kalasha Sthapane and the Dharmika Vidhi-Vidhanas performed by the Archaka. A Vishesha Alankara is offered to Lord Venkataramana, after which the Mahapooja and Mangalarathi are performed with great devotion. Later, Prasada and Santarpane are distributed to all devotees, and it is believed that no devotee should miss this sacred Prasada. The festival is observed with devotion, unity, and joy as the Samaj Bandhavas gather to seek the divine grace of Lord Anantha."
     },
     {
       id: 10,
-      name: "Deepavali",
-      shortDescription: "Deepavali, the festival of lights, is celebrated with great enthusiasm. The entire temple complex is illuminated with thousands of oil lamps and decorative lights.",
-      fullDescription: [
-        "Deepavali, the festival of lights, is celebrated with great enthusiasm. The day begins with early morning special poojas and abhishekam. The entire temple complex is illuminated with thousands of oil lamps (diyas) and decorative lights.",
-        "Special decorations include rangoli patterns, flower garlands, and traditional motifs. Lakshmi Pooja is performed in the evening seeking blessings for prosperity and wealth. Devotees light lamps in their homes and visit the temple for darshan.",
-        "Special prasadam including laddus, barfi, and other sweets are distributed. Fireworks display is organized in the temple premises. The evening features special aarti with multiple lamps. Cultural programs including music and dance performances add to the festive atmosphere. The temple remains open late into the night for devotees to offer prayers."
-      ]
+      name: "Vanabhojana Utsava",
+      shortDescription: "Vanabhojana is celebrated every year in the temple on the Bahula Panchami of the Kartika Maasa, when the Ubhaya Devaru of Naikanakatte are taken to the vana, symbolizing divine togetherness and the unity of the Samaj.",
+      expandedText: " The program begins with Devatha Prarthane, followed by the grand procession of both deities to the vana in the Pallakki. In the vana, Dhatri Havana, Dharmika Vidhi-Vidhanas, Pooja, and Mangalarathi are performed before Prasada distribution and Santarpane take place in the serene natural surroundings. In the evening, the Lord returns to the temple in the Pallakki, blessing devotees at their doorsteps, with several Katte Poojas conducted along the route. Upon returning, Astavadhana Seva and Ratri Pooja are offered to the Lord, and the entire festival is celebrated with deep devotion, unity, and joy."
     },
     {
       id: 11,
-      name: "Vaikunta Ekadashi",
-      shortDescription: "Vaikunta Ekadashi is one of the most sacred days for Vaishnavites, believed to be the day when the gates of Vaikunta (heaven) are opened.",
-      fullDescription: [
-        "Vaikunta Ekadashi is one of the most sacred days for Vaishnavites, believed to be the day when the gates of Vaikunta (heaven) are opened. Devotees observe strict fasting and stay awake the previous night (Jagarana).",
-        "Early morning special darshan through the Vaikunta Dwaram (celestial gate) is arranged. Continuous chanting of Vishnu Sahasranama and other prayers takes place. Special abhishekam and archana with 1008 names of Lord Vishnu are performed.",
-        "Devotees break their fast after darshan and prayers. The temple is decorated with special arrangements for the celestial gate. Spiritual discourses on the significance of Ekadashi are conducted. Special prasadam including fruits and tulsi leaves are distributed. The day is marked by continuous prayers and devotional activities throughout."
-      ]
-    },
-    {
-      id: 12,
-      name: "Maha Shivaratri",
-      shortDescription: "Maha Shivaratri, the great night of Lord Shiva, is observed with night-long vigil and prayers. The day begins with special abhishekam using water, milk, honey, curd, and bilva leaves.",
-      fullDescription: [
-        "Maha Shivaratri, the great night of Lord Shiva, is observed with night-long vigil and prayers. The day begins with special abhishekam using water, milk, honey, curd, and bilva leaves.",
-        "Continuous chanting of 'Om Namah Shivaya' and Shiva mantras resonates throughout the temple. Devotees observe fasting and perform four rounds of pooja during the night (Nishitha, Ratri, Nishitha, and Brahma Muhurta). Special Rudrabhishekam is performed with Vedic chants.",
-        "The temple is decorated with flowers, especially white flowers and bilva leaves. Devotees offer bel leaves, fruits, and milk to the deity. Night-long bhajans and kirtans create a divine atmosphere. Special arrangements are made for devotees to stay and participate in the vigil. The celebration continues until early morning with final aarti and darshan."
-      ]
-    },
+      name: "Bhajana Ekaha",
+      shortDescription: "Bhajana Ekaha is observed every year in the temple on the Ekadashi Tithi of the Karthika Maasa, where devotees spend an entire day and night immersed in devotional singing and service.",
+      expandedText: " The program begins with Devatha Prarthane and Deepa Sthapane, followed by Akhanda Bhajans performed by various Bhajana Mandalis and Paalis that continue until the next afternoon. A Vishesha Pushpalankara is offered to the Lord on both days, and the afternoon Mahapooja and Mangalarathi are followed by Prasada distribution and Santarpane. In the evening, the deities are taken out in a grand Bhajana Nagarotsava in the Pallakki, with Katte Poojas along the way. Upon returning to the temple, Bhajana Suttu and Ratri Pooja are offered to the Lord, concluding with Prasada distribution."
+    }
   ]
 
   return (

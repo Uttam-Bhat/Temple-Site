@@ -113,6 +113,19 @@ const Sevas = () => {
     }
   ]
 
+  const swamjiMokkamSevas = [
+    { id: 1, name: "Sarva Seve", nameKannada: "ಸರ್ವ ಸೇವೆ", total: "As per devotion" },
+    { id: 2, name: "Santharpana Seve", nameKannada: "ಸಂತರ್ಪಣ ಸೇವೆ", total: "As per devotion" },
+    { id: 3, name: "Shri Hari-Guru Seve", nameKannada: "ಶ್ರೀ ಹರಿಗುರು ಸೇವೆ", total: "As per devotion" },
+    { id: 4, name: "Maha Pooje", nameKannada: "ಮಹಾ ಪೂಜೆ", total: "As per devotion" },
+    { id: 5, name: "Rathri Pooje", nameKannada: "ರಾತ್ರಿ ಪೂಜೆ", total: "As per devotion" },
+    { id: 6, name: "Mahasantharpana Seve", nameKannada: "ಮಹಾ ಸಂತರ್ಪಣ ಸೇವೆ", total: "As per devotion" },
+    { id: 7, name: "Mutt Bikshe", nameKannada: "ಮಠ ಭಿಕ್ಷೆ", total: "As per devotion" },
+    { id: 8, name: "Pushpalankara Seve", nameKannada: "ಪುಷ್ಪಾಲಂಕಾರ ಸೇವೆ", total: "As per devotion" },
+    { id: 9, name: "Kalashabhisheka Seve", nameKannada: "ಕಲಶಾಭಿಷೇಕ ಸೇವೆ", total: "As per devotion" },
+    { id: 10, name: "Vishesha Vanthige", nameKannada: "ವಿಶೇಷ ವಂಥಿಗೆ", total: "As per devotion" }
+  ]
+
   return (
     <div className="page">
       <button className="mobile-back-btn" onClick={() => navigate(-1)} aria-label="Go back">
@@ -141,6 +154,30 @@ const Sevas = () => {
                 {sevas.map((seva) => (
                   <tr key={seva.id}>
                     <td className="sl-no-cell">{seva.slNo}</td>
+                    <td className="seva-name-cell">{seva.name}</td>
+                    <td className="seva-name-kannada-cell">{seva.nameKannada}</td>
+                    <td className="seva-total-cell">{seva.total}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="swamji-mokkam-table-wrapper">
+            <h2 className="sevas-subheading">Swamji Mokkam</h2>
+            <table className="sevas-table swamji-table">
+              <thead>
+                <tr>
+                  <th>ಕ್ರ. ಸಂಖ್ಯೆ / SL No</th>
+                  <th>Seva (English)</th>
+                  <th>ಸೇವೆ (ಕನ್ನಡ)</th>
+                  <th>ಒಟ್ಟು / Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                {swamjiMokkamSevas.map((seva) => (
+                  <tr key={seva.id}>
+                    <td className="sl-no-cell">{seva.id}</td>
                     <td className="seva-name-cell">{seva.name}</td>
                     <td className="seva-name-kannada-cell">{seva.nameKannada}</td>
                     <td className="seva-total-cell">{seva.total}</td>

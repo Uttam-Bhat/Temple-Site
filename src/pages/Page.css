@@ -1006,6 +1006,28 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
+.sevas-subheading {
+  font-size: 1.65rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.swamji-mokkam-table-wrapper {
+  margin-top: 2.5rem;
+}
+
+.swamji-table th:first-child {
+  width: 110px;
+}
+
+.swamji-table .seva-name-cell,
+.swamji-table .seva-name-kannada-cell,
+.swamji-table .seva-total-cell {
+  text-align: left;
+  padding-left: 2rem;
+}
+
 .sevas-note p {
   color: var(--text-dark);
   margin: 0;
@@ -2117,6 +2139,14 @@
     min-width: 700px;
   }
 
+  .swamji-mokkam-section {
+    padding: 1.5rem;
+  }
+
+  .sevas-subheading {
+    font-size: 1.4rem;
+  }
+
   .sevas-table th,
   .sevas-table td {
     padding: 0.875rem 1rem;
@@ -2239,6 +2269,14 @@
 
   .mobile-back-btn svg {
     font-size: 0.85rem;
+  }
+
+  .swamji-mokkam-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .swamji-mokkam-item {
+    padding: 0.85rem 0.9rem;
   }
 }
 
