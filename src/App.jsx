@@ -4,7 +4,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import History from './pages/History'
-import TempleTimings from './pages/TempleTimings'
 import Deities from './pages/Deities'
 import Parivara from './pages/Parivara'
 import Committee from './pages/Committee'
@@ -24,7 +23,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/history" element={<History />} />
-          <Route path="/temple-timings" element={<TempleTimings />} />
           <Route path="/deities" element={<Deities />} />
           <Route path="/parivara" element={<Parivara />} />
           <Route path="/committee" element={<Committee />} />

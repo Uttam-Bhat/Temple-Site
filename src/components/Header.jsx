@@ -51,7 +51,6 @@ const Header = () => {
               {isAboutOpen && (
                 <ul className="dropdown-menu">
                   <li><Link to="/history">History</Link></li>
-                  <li><Link to="/temple-timings">Temple Timings</Link></li>
                   <li><Link to="/deities">Deities in the Garbhagraha</Link></li>
                   <li><Link to="/committee">Committee</Link></li>
                 </ul>
@@ -101,7 +100,6 @@ const Header = () => {
             <Link to="/history" onClick={toggleMobileMenu}>About</Link>
             <ul className="mobile-submenu">
               <li><Link to="/history" onClick={toggleMobileMenu}>History</Link></li>
-              <li><Link to="/temple-timings" onClick={toggleMobileMenu}>Temple Timings</Link></li>
               <li><Link to="/deities" onClick={toggleMobileMenu}>Deities in the Garbhagraha</Link></li>
               <li><Link to="/committee" onClick={toggleMobileMenu}>Committee</Link></li>
             </ul>
