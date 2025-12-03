@@ -43,6 +43,24 @@ const Deities = () => {
       name: "Shri Anjaneya",
       image: "https://via.placeholder.com/400x500/A52A2A/ffffff?text=Shri+Anjaneya",
       description: "Another form of Lord Hanuman, Anjaneya is revered for his unwavering devotion and divine powers."
+    },
+    {
+      id: 7,
+      name: "Shri Venkataramana",
+      image: "/images/Main_idol.png",
+      description: "The main presiding deity of the temple, Lord Venkataramana is worshipped with great devotion and reverence."
+    },
+    {
+      id: 8,
+      name: "Shri Lakshmi",
+      image: "https://via.placeholder.com/400x500/8B0000/ffffff?text=Shri+Lakshmi",
+      description: "Goddess Lakshmi, the consort of Lord Venkataramana, represents prosperity, wealth, and divine grace."
+    },
+    {
+      id: 9,
+      name: "Shri Padmavathi",
+      image: "https://via.placeholder.com/400x500/A52A2A/ffffff?text=Shri+Padmavathi",
+      description: "Goddess Padmavathi, another form of the divine consort, is worshipped for blessings and spiritual fulfillment."
     }
   ]
 
