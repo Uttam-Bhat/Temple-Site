@@ -71,6 +71,8 @@ const Parivara = () => {
                   <img 
                     src={deity.image} 
                     alt={deity.name}
+                    loading="lazy"
+                    decoding="async"
                     className="parivara-image"
                   />
                 </div>

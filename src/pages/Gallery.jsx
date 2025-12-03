@@ -138,7 +138,11 @@ const Gallery = () => {
       subtitle:
         "The Vardhanthi Mahotsava is celebrated on the occasion of the anniversary of the establishment of the temple, where a vishesha alankara pooja is performed and santarpane is offered.",
       coverImage: "/images/vardanti.jpeg",
-      images: [],
+      images: [
+        "/images/prathista-vardanti/image1.jpg",
+        "/images/prathista-vardanti/image2.jpg",
+        "/images/prathista-vardanti/image3.jpg",
+      ],
       landscapeImages: [],
     },
   ];
@@ -174,6 +178,7 @@ const Gallery = () => {
                         alt={event.name}
                         className="gallery-event-image"
                         loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div className="gallery-event-name">{event.name}</div>
@@ -210,6 +215,7 @@ const Gallery = () => {
                         alt={`${selectedEvent.name} ${index + 1}`}
                         className="gallery-event-photo"
                         loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   );
@@ -220,7 +226,7 @@ const Gallery = () => {
                 <p>
                   Looking for more photos and updates? Follow us on{" "}
                   <a
-                    href="https://www.instagram.com"
+                    href="https://www.instagram.com/svt_naikanakatte?igsh=aGJka2dwbTZncW44"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -228,7 +234,7 @@ const Gallery = () => {
                   </a>{" "}
                   and{" "}
                   <a
-                    href="https://www.facebook.com"
+                    href="https://www.facebook.com/srilaxmivenkataramanatemple.naikanakatte?mibextid=ZbWKwL"
                     target="_blank"
                     rel="noreferrer"
                   >

@@ -6,6 +6,20 @@ export default defineConfig({
   server: {
     open: true,
     host: true
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'icons': ['react-icons']
+        }
+      }
+    },
+    chunkSizeWarningLimit: 1000
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom', 'react-icons']
   }
 })
 

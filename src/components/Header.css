@@ -209,6 +209,8 @@
   transition: max-height 0.3s ease;
   border-bottom: 1px solid var(--border-color);
   z-index: 999;
+  will-change: max-height;
+  transform: translateZ(0);
 }
 
 .nav-mobile.open {

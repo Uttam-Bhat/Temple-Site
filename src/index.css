@@ -22,6 +22,9 @@
 html {
   overflow-y: auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -33,11 +36,13 @@ body {
   background-size: 60% auto;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
   min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
 }
 
 body::before {
@@ -57,6 +62,8 @@ body::before {
   z-index: 0;
   pointer-events: none;
   mix-blend-mode: multiply;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 @media (max-width: 768px) {
@@ -73,11 +80,13 @@ body::before {
 @media (max-width: 480px) {
   body {
     background-size: 90% auto;
+    background-attachment: scroll;
   }
   
   body::before {
     background-size: 90% auto;
     opacity: 0.3;
+    background-attachment: scroll;
   }
 }
 

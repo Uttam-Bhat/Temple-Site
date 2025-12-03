@@ -89,6 +89,8 @@ const Deities = () => {
                     src={deity.image} 
                     alt={deity.name}
                     className="deity-image"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="deity-overlay"></div>
                 </div>

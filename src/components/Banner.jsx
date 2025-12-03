@@ -62,6 +62,8 @@ const Banner = () => {
                     src={slide.image} 
                     alt={slide.alt}
                     className="banner-image"
+                    loading={index === 0 ? "eager" : "lazy"}
+                    decoding="async"
                   />
                 </picture>
               ) : (
@@ -69,6 +71,8 @@ const Banner = () => {
                   src={slide.image} 
                   alt={slide.alt}
                   className="banner-image"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  decoding="async"
                 />
               )}
               <div className="banner-overlay"></div>

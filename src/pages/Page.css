@@ -6,6 +6,8 @@
   z-index: 1;
   overflow-y: auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-back-btn {
@@ -963,6 +965,7 @@
 .sevas-table tbody tr {
   border-bottom: 1px solid var(--border-color);
   transition: background-color 0.3s ease;
+  will-change: background-color;
 }
 
 .sevas-table tbody tr:hover {

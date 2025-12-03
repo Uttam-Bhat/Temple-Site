@@ -62,6 +62,8 @@ const VardhanthiUtsava = () => {
               <img 
                 src={item.image} 
                 alt={item.alt}
+                loading="lazy"
+                decoding="async"
                 className="event-image"
               />
             </div>

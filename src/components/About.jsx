@@ -37,6 +37,8 @@ const About = () => {
               src="/images/about.JPG" 
               alt="Temple"
               className="about-image"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -62,6 +64,8 @@ const About = () => {
                 src="/images/history.jpeg" 
                 alt="Temple History"
                 className="about-card-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <h4 className="about-card-title">Temple History</h4>
@@ -73,6 +77,8 @@ const About = () => {
                 src="/images/deities.JPG" 
                 alt="Deities in the Garbhagraha"
                 className="about-card-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <h4 className="about-card-title">Deities in the Garbhagraha</h4>
@@ -84,6 +90,8 @@ const About = () => {
                 src="/images/sevas.jpeg" 
                 alt="Sevas"
                 className="about-card-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <h4 className="about-card-title">Sevas</h4>

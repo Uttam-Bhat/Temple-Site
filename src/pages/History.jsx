@@ -54,6 +54,8 @@ const History = () => {
                 src="/images/history.jpeg" 
                 alt="Temple History"
                 className="content-image"
+                loading="lazy"
+                decoding="async"
               />
               <div className="image-overlay-text">Heritage & Tradition</div>
             </div>

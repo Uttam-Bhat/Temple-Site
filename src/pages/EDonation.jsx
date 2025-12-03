@@ -50,6 +50,8 @@ const EDonation = () => {
                     <img
                       src="/images/scanner.jpeg"
                       alt="UPI QR Code"
+                      loading="lazy"
+                      decoding="async"
                       className="upi-qr-image"
                     />
                     <span className="qr-note">Scan to pay via UPI</span>
