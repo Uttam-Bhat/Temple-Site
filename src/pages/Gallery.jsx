@@ -116,8 +116,8 @@ const Gallery = () => {
     },
     {
       id: 7,
-      name: "Ramotsava - 2025",
-      title: "Ramotsava - 2025",
+      name: "Ramotsava",
+      title: "Ramotsava",
       subtitle:
         "Rama Utsava was celebrated at the temple on the occasion of the Prana Pratistha of Ram Lalla in Ayodhya, where the Samaj Bhandhavas united and celebrated with great devotion and enthusiasm.",
       coverImage: "/images/ramotsav.jpeg",

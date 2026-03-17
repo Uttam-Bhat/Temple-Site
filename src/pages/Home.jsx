@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import FeaturedPosters from '../components/FeaturedPosters'
+import AnnouncementBadge from '../components/AnnouncementBadge'
 import About from '../components/About'
 import './Page.css'
 
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="page">
       <Banner />
-      <FeaturedPosters />
+      <AnnouncementBadge />
       <About />
     </div>
   )

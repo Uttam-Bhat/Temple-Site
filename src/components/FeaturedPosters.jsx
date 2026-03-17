@@ -38,36 +38,36 @@ const FeaturedPosters = () => {
   return (
     <section className="featured-posters-section">
       <div className="container">
-        <div className="featured-notice-card">
-          <div className="featured-notice-left">
-            <span className="featured-notice-pill">
-              {currentPoster.tag || 'Announcement'}
-            </span>
+        <div className="featured-badge-card">
+          <div className="featured-badge-label">
+            <span>{currentPoster.tag || 'Announcement'}</span>
           </div>
-          <div className="featured-notice-main">
-            <h2 className="featured-notice-title">{currentPoster.title}</h2>
+          <div className="featured-badge-main">
+            <div className="featured-badge-title-row">
+              <h2 className="featured-badge-title">{currentPoster.title}</h2>
+              {currentPoster.dateText && (
+                <span className="featured-badge-date">
+                  {currentPoster.dateText}
+                </span>
+              )}
+            </div>
             {currentPoster.subtitle && (
-              <p className="featured-notice-subtitle">
+              <p className="featured-badge-subtitle">
                 {currentPoster.subtitle}
               </p>
             )}
           </div>
-          {currentPoster.dateText && (
-            <div className="featured-notice-right">
-              <span className="featured-notice-date">
-                {currentPoster.dateText}
-              </span>
-            </div>
-          )}
         </div>
 
         {activePosters.length > 1 && (
-          <div className="featured-notice-dots">
+          <div className="featured-badge-dots">
             {activePosters.map((poster, index) => (
               <button
                 key={poster.id}
                 type="button"
-                className={`featured-notice-dot ${index === currentIndex ? 'active' : ''}`}
+                className={`featured-badge-dot ${
+                  index === currentIndex ? 'active' : ''
+                }`}
                 onClick={() => handleDotClick(index)}
                 aria-label={`Show announcement ${index + 1}`}
               />
