@@ -1,67 +1,41 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './AnnouncementBadge.css'
 
-const posters = [
-  {
-    id: 1,
-    title: 'Sample Poster Title',
-    subtitle: 'Short description of the upcoming event or announcement goes here.',
-    tag: 'Announcement',
-    dateText: 'Mar 25 – Mar 27',
-    // Replace with actual image path, e.g. '/images/announcements/sample.jpg'
-    image: '/images/sample-poster.jpg',
-    active: true,
-  },
-]
+const upcoming = {
+  title: 'Ram Navami',
+  label: 'Upcoming Event',
+  dateText: 'Mar 25 – Mar 27',
+  image: '/images/Upcoming/Ram Navami.jpg',
+}
 
 const AnnouncementBadge = () => {
-  const activePosters = posters.filter((p) => p.active)
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  useEffect(() => {
-    if (activePosters.length <= 1) return
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % activePosters.length)
-    }, 8000)
-    return () => clearInterval(interval)
-  }, [activePosters.length])
-
-  if (activePosters.length === 0) return null
-
-  const currentPoster = activePosters[currentIndex]
+  if (!upcoming) return null
 
   return (
-    <div className="announcement-badge">
-      <div className="announcement-card">
-        <div className="announcement-card-image">
-          {currentPoster.image && (
+    <section className="upcoming-section">
+      <div className="container">
+        <div className="upcoming-header">
+          <h2 className="upcoming-title">{upcoming.label}</h2>
+          {upcoming.dateText && (
+            <span className="upcoming-date">{upcoming.dateText}</span>
+          )}
+        </div>
+        {upcoming.title && (
+          <h3 className="upcoming-event-name">{upcoming.title}</h3>
+        )}
+        {upcoming.image && (
+          <div className="upcoming-image-wrapper">
             <img
-              src={currentPoster.image}
-              alt={currentPoster.title}
-              className="announcement-card-image-img"
+              src={upcoming.image}
+              alt={upcoming.title}
+              className="upcoming-image"
               loading="lazy"
               decoding="async"
             />
-          )}
-        </div>
-        <div className="announcement-text">
-          <div className="announcement-title-row">
-            <span className="announcement-label">
-              {currentPoster.tag || 'Announcement'}
-            </span>
-            {currentPoster.dateText && (
-              <span className="announcement-date">
-                {currentPoster.dateText}
-              </span>
-            )}
           </div>
-          <h2 className="announcement-title">{currentPoster.title}</h2>
-          {currentPoster.subtitle && (
-            <p className="announcement-subtitle">{currentPoster.subtitle}</p>
-          )}
-        </div>
+        )}
       </div>
-    </div>
+    </section>
   )
 }
 
