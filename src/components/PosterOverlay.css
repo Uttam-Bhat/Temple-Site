@@ -1,0 +1,70 @@
+.poster-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  /* Allow scrolling and clicking the page under the overlay */
+  pointer-events: none;
+}
+
+.poster-overlay-inner {
+  position: relative;
+  max-width: min(98vw, 900px);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+  overflow: auto; /* allow scrolling inside the poster area */
+}
+
+.poster-overlay-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.poster-overlay-close {
+  margin-top: 0.75rem;
+  padding: 0.45rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.poster-overlay-close:hover {
+  background: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+  .poster-overlay-inner {
+    max-width: 94vw;
+    max-height: 88vh;
+  }
+
+  .poster-overlay-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Hide scrollbar while keeping scroll functionality */
+.poster-overlay-inner {
+  scrollbar-width: none; /* Firefox */
+}
+
+.poster-overlay-inner::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+

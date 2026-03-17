@@ -26,8 +26,8 @@ const Gallery = () => {
     },
     {
       id: 2,
-      name: "Vanabhojana 2025",
-      title: "Vanabhojana 2025",
+      name: "Vanabhojana",
+      title: "Vanabhojana",
       subtitle:
         "Vanabhojana is a yearly celebrated festival marked on the Bahula Panchami of the Karthika Maasa, where the Ubhaya Venkataramana of the two temples go to the vana on the utsava and return, marking the occasion with devotion and tradition.",
       coverImage: "/images/vanabhojana(main).jpg",

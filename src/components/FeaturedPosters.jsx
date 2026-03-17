@@ -6,9 +6,8 @@ const posters = [
     id: 1,
     title: 'Sample Poster Title',
     subtitle: 'Short description of the upcoming event or announcement goes here.',
-    tag: 'Upcoming',
+    tag: 'Announcement',
     dateText: 'Mar 25 – Mar 27',
-    image: '/images/sample-poster.jpg', // replace with actual poster image
     link: null,
     active: true,
   },
@@ -36,67 +35,41 @@ const FeaturedPosters = () => {
     setCurrentIndex(index)
   }
 
-  const handleCardClick = () => {
-    if (currentPoster.link) {
-      window.open(currentPoster.link, '_blank', 'noopener,noreferrer')
-    }
-  }
-
   return (
     <section className="featured-posters-section">
       <div className="container">
-        <div
-          className={`featured-poster-card ${currentPoster.link ? 'clickable' : ''}`}
-          onClick={currentPoster.link ? handleCardClick : undefined}
-        >
-          <div className="featured-poster-image-wrapper">
-            <img
-              src={currentPoster.image}
-              alt={currentPoster.title}
-              className="featured-poster-image"
-              loading="lazy"
-              decoding="async"
-            />
-            {currentPoster.tag && (
-              <span className="featured-poster-tag">
-                {currentPoster.tag}
-              </span>
-            )}
+        <div className="featured-notice-card">
+          <div className="featured-notice-left">
+            <span className="featured-notice-pill">
+              {currentPoster.tag || 'Announcement'}
+            </span>
           </div>
-          <div className="featured-poster-content">
-            <div className="featured-poster-header">
-              <h2 className="featured-poster-title">{currentPoster.title}</h2>
-              {currentPoster.dateText && (
-                <span className="featured-poster-date">{currentPoster.dateText}</span>
-              )}
-            </div>
+          <div className="featured-notice-main">
+            <h2 className="featured-notice-title">{currentPoster.title}</h2>
             {currentPoster.subtitle && (
-              <p className="featured-poster-subtitle">{currentPoster.subtitle}</p>
-            )}
-            {currentPoster.link && (
-              <button
-                type="button"
-                className="featured-poster-button"
-                onClick={(e) => {
-                  e.stopPropagation()
-                  handleCardClick()
-                }}
-              >
-                View Details
-              </button>
+              <p className="featured-notice-subtitle">
+                {currentPoster.subtitle}
+              </p>
             )}
           </div>
+          {currentPoster.dateText && (
+            <div className="featured-notice-right">
+              <span className="featured-notice-date">
+                {currentPoster.dateText}
+              </span>
+            </div>
+          )}
         </div>
 
         {activePosters.length > 1 && (
-          <div className="featured-poster-dots">
+          <div className="featured-notice-dots">
             {activePosters.map((poster, index) => (
               <button
                 key={poster.id}
                 type="button"
-                className={`featured-poster-dot ${index === currentIndex ? 'active' : ''}`}
+                className={`featured-notice-dot ${index === currentIndex ? 'active' : ''}`}
                 onClick={() => handleDotClick(index)}
-                aria-label={`Show poster ${index + 1}`}
+                aria-label={`Show announcement ${index + 1}`}
               />
             ))}
           </div>

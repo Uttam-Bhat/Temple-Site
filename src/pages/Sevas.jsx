@@ -9,104 +9,111 @@ const Sevas = () => {
     {
       id: 1,
       slNo: 1,
-      name: "Shashvatha Seva Nidhi",
-      nameKannada: "ಶಾಶ್ವತ ಸೇವಾ ನಿಧಿ",
+      name: "Saturday Pooja",
+      nameKannada: "ಶನಿವಾರ ಪೂಜಾ",
       total: "As per devotion"
     },
     {
       id: 2,
       slNo: 2,
-      name: "Shri Rama Navami",
-      nameKannada: "ಶ್ರೀ ರಾಮ ನವಮಿ",
+      name: "Ekadashi Pooja",
+      nameKannada: "ಏಕಾದಶಿ ಪೂಜಾ",
       total: "As per devotion"
     },
     {
       id: 3,
       slNo: 3,
-      name: "Shraavana Sankranthi Vrata",
-      nameKannada: "ಶ್ರಾವಣ ಸಂಕ್ರಾಂತಿ ವ್ರತ",
+      name: "Shashvatha Seva Nidhi",
+      nameKannada: "ಶಾಶ್ವತ ಸೇವಾ ನಿಧಿ",
       total: "As per devotion"
     },
     {
       id: 4,
       slNo: 4,
-      name: "Anantha Vrata",
-      nameKannada: "ಆನಂತ ವ್ರತ",
+      name: "Shri Rama Navami",
+      nameKannada: "ಶ್ರೀ ರಾಮ ನವಮಿ",
       total: "As per devotion"
     },
     {
       id: 5,
       slNo: 5,
-      name: "Vanabhojana",
-      nameKannada: "ವನಭೋಜನ",
+      name: "Shraavana Sankranthi Vrata",
+      nameKannada: "ಶ್ರಾವಣ ಸಂಕ್ರಾಂತಿ ವ್ರತ",
       total: "As per devotion"
     },
     {
       id: 6,
       slNo: 6,
-      name: "Bhajane Samradhane",
-      nameKannada: "ಭಜನೆ ಸಮ್ರಾಧನೆ",
+      name: "Anantha Vrata",
+      nameKannada: "ಆನಂತ ವ್ರತ",
       total: "As per devotion"
     },
     {
       id: 7,
       slNo: 7,
-      name: "Shrasti Samaradhane",
-      nameKannada: "ಶ್ರಸ್ತಿ ಸಮಾರಾಧನೆ",
+      name: "Vanabhojana",
+      nameKannada: "ವನಭೋಜನ",
       total: "As per devotion"
     },
     {
       id: 8,
       slNo: 8,
-      name: "Special Event",
-      nameKannada: "ವಿಶೇಷ ಕಾರ್ಯಕ್ರಮ",
+      name: "Bhajane Samradhane",
+      nameKannada: "ಭಜನೆ ಸಮ್ರಾಧನೆ",
       total: "As per devotion"
     },
     {
       id: 9,
       slNo: 9,
-      name: "Vessel Rent",
-      nameKannada: "ಪಾತ್ರೆಗಳ ಬಾಡಿಗೆ",
-      total: "As per requirement"
+      name: "Shrasti Samaradhane",
+      nameKannada: "ಶ್ರಸ್ತಿ ಸಮಾರಾಧನೆ",
+      total: "As per devotion"
     },
     {
       id: 10,
       slNo: 10,
-      name: "Sarva Seva",
-      nameKannada: "ಸರ್ವ ಸೇವೆ",
+      name: "Special Event",
+      nameKannada: "ವಿಶೇಷ ಕಾರ್ಯಕ್ರಮ",
       total: "As per devotion"
     },
     {
       id: 11,
       slNo: 11,
-      name: "Santarpane Seva",
-      nameKannada: "ಸಂತರ್ಪಣೆ ಸೇವೆ",
+      name: "Sarva Seva",
+      nameKannada: "ಸರ್ವ ಸೇವೆ",
       total: "As per devotion"
     },
     {
       id: 12,
       slNo: 12,
-      name: "Pushpahalankara Pooja",
-      nameKannada: "ಪುಷ್ಪಾಲಂಕಾರ ಪೂಜೆ",
+      name: "Santarpane Seva",
+      nameKannada: "ಸಂತರ್ಪಣೆ ಸೇವೆ",
       total: "As per devotion"
     },
     {
       id: 13,
       slNo: 13,
-      name: "Kalashabhisheka",
-      nameKannada: "ಕಲಶಾಭಿಷೇಕ",
+      name: "Pushpahalankara Pooja",
+      nameKannada: "ಪುಷ್ಪಾಲಂಕಾರ ಪೂಜೆ",
       total: "As per devotion"
     },
     {
       id: 14,
       slNo: 14,
-      name: "Pattadha Kanike",
-      nameKannada: "ಪಟ್ಟದ ಕಾಣಿಕೆ",
+      name: "Kalashabhisheka",
+      nameKannada: "ಕಲಶಾಭಿಷೇಕ",
       total: "As per devotion"
     },
     {
       id: 15,
       slNo: 15,
+      name: "Pattadha Kanike",
+      nameKannada: "ಪಟ್ಟದ ಕಾಣಿಕೆ",
+      total: "As per devotion"
+    },
+    {
+      id: 16,
+      slNo: 16,
       name: "Bhudana Seva",
       nameKannada: "ಭೂದಾನ ಸೇವೆ",
       total: "As per devotion"
