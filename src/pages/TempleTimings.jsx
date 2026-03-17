@@ -94,8 +94,8 @@ const TempleTimings = () => {
           <div className="timings-note">
             <FaInfoCircle className="note-icon" />
             <p>
-              <strong>Note:</strong> Temple timings may vary on special occasions and festivals. 
-              Please contact the temple office for updated timings during special events.
+              <strong>Note:</strong> Timings may vary depending on Archaka and temple schedule.
+              Please contact the temple committee or office before planning your visit, especially on special occasions.
             </p>
           </div>
         </div>

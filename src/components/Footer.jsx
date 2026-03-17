@@ -43,6 +43,10 @@ const Footer = () => {
               <span className="timing-label morning">Morning:</span> <span className="timing-value">10:00 AM – 12:00 PM</span><br />
               <span className="timing-label evening">Evening:</span> <span className="timing-value">6:00 PM – 8:00 PM</span>
             </p>
+            <p className="footer-timing-note">
+              Timings may vary depending on Archaka and temple schedule.
+              Please contact the temple committee or office before planning your visit.
+            </p>
           </div>
 
           <div className="footer-section glass-box">
@@ -53,6 +57,10 @@ const Footer = () => {
             <p className="footer-timing">
               <span className="timing-label morning">Morning:</span> <span className="timing-value">10:30 AM – 11:30 AM</span><br />
               <span className="timing-label evening">Evening:</span> <span className="timing-value">6:30 PM – 7:30 PM</span>
+            </p>
+            <p className="footer-timing-note">
+              Timings may vary depending on Archaka and temple schedule.
+              Please contact the temple committee or office before planning your visit.
             </p>
           </div>
         </div>

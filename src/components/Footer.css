@@ -124,6 +124,14 @@
   opacity: 0.95;
 }
 
+.footer-timing-note {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--bg-white);
+  opacity: 0.9;
+}
+
 .timing-label {
   font-weight: 600;
   display: inline-block;

@@ -10,7 +10,25 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="initial-loading" class="initial-loading">
+        <div class="initial-loading-content">
+          <div class="initial-loading-logo-wrapper">
+            <img src="/images/svt_final(without bg).png" alt="Shri Venkataramana Temple" class="initial-loading-logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .initial-loading {
+        position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+        background: linear-gradient(135deg, #FEF9F3 0%, #F5E6D3 50%, #E8D5B7 100%);
+        z-index: 9999; min-height: 100vh; min-width: 100vw;
+      }
+      .initial-loading-content { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+      .initial-loading-logo-wrapper { position: relative; display: flex; align-items: center; justify-content: center; }
+      .initial-loading-logo { width: 180px; height: auto; z-index: 2; }
+    </style>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
