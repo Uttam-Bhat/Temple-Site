@@ -22,33 +22,33 @@ const Deities = () => {
     },
     {
       id: 3,
-      name: "Lord Naatya Krishna",
+      name: "Lord Shree Krishna",
       image: "images/Murthy/Natya Krishna.png",
-      description: "Goddess Padmavathi, another form of the divine consort, is worshipped for blessings and spiritual fulfillment."
+      description: ""
     },
     {
       id: 4,
       name: "Lord Vitobha",
       image: "images/Murthy/Vitobha.png",
-      description: "The divine vehicle of Lord Vishnu, Garuda is revered as a symbol of strength and devotion."
+      description: ""
     },
     {
       id: 5,
       name: "Lord Venkataramana",
       image: "images/Murthy/small venkataramana.png",
-      description: "Lord Hanuman, the embodiment of devotion and strength, is worshipped for protection and spiritual guidance."
+      description: ""
     },
     {
       id: 6,
-      name: "Shri Krishna",
+      name: "Lord Shree Krishna",
       image: "/images/Murthy/Ladduka Krishna.png",
-      description: "The main presiding deity of the temple, Lord Venkataramana is worshipped with great devotion and reverence."
+      description: ""
     },
     {
       id: 7,
       name: "Shalagramas",
       image: "images/Murthy/Saligram.png",
-      description: "Goddess Lakshmi, the consort of Lord Venkataramana, represents prosperity, wealth, and divine grace."
+      description: ""
     },
   ]
 
