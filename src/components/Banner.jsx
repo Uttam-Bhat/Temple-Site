@@ -12,14 +12,14 @@ const Banner = () => {
     },
     {
       id: 2,
-      image: '/images/banner-2.png',
-      mobileImage: '/images/banner-2(mobile).png',
+      image: '/images/Banner-2.jpg',
+      mobileImage: '/images/Banner-2(Mobile).jpg',
       alt: 'Temple festival celebration banner'
     },
     {
       id: 3,
-      image: '/images/banner-3.png',
-      mobileImage: '/images/banner-3(mobile).png',
+      image: '/images/Banner-3.jpg',
+      mobileImage: '/images/Banner-3(Mobile).jpg',
       alt: 'Cultural events and rituals collage'
     }
   ]

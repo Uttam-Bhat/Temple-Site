@@ -345,7 +345,7 @@
 .deities-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.75rem;
+  gap: 1.25rem;
   margin-top: 2rem;
 }
 
@@ -394,7 +394,7 @@
 
 .deity-image {
   width: 100%;
-  height: 280px;
+  height: 230px;
   object-fit: contain;
   object-position: center;
   transition: transform 0.4s ease;
@@ -403,6 +403,33 @@
 
 .deity-card:hover .deity-image {
   transform: scale(1.1);
+}
+
+/* Only zoom Lord Vitobha card */
+.deity-card.deity-card-vitobha .deity-image {
+  transform: scale(1.06);
+}
+
+.deity-card.deity-card-vitobha:hover .deity-image {
+  transform: scale(1.14);
+}
+
+/* Center Shalagramas card on its row (desktop 3-column grid) */
+.deity-card.deity-card-shalagramas {
+  justify-self: center;
+}
+
+@media (min-width: 969px) {
+  .deity-card.deity-card-shalagramas {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 968px) {
+  .deity-card.deity-card-shalagramas {
+    grid-column: 1 / -1;
+    max-width: 420px;
+  }
 }
 
 .deity-overlay {
@@ -421,7 +448,7 @@
 }
 
 .deity-info {
-  padding: 1.25rem;
+  padding: 1rem;
   background: var(--bg-white);
   position: relative;
   z-index: 2;
@@ -432,9 +459,9 @@
 
 .deity-name {
   color: var(--primary-color);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
   text-align: center;
   position: relative;
   padding-bottom: 0.5rem;
