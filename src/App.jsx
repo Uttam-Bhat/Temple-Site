@@ -12,6 +12,7 @@ const Deities = lazy(() => import('./pages/Deities'))
 const Parivara = lazy(() => import('./pages/Parivara'))
 const Committee = lazy(() => import('./pages/Committee'))
 const AnnualFunctions = lazy(() => import('./pages/AnnualFunctions'))
+const AnnualCalendar = lazy(() => import('./pages/AnnualCalendar'))
 const Sevas = lazy(() => import('./pages/Sevas'))
 const EDarshana = lazy(() => import('./pages/EDarshana'))
 const EDonation = lazy(() => import('./pages/EDonation'))
@@ -54,6 +55,7 @@ function App() {
             <Route path="/parivara" element={<Parivara />} />
             <Route path="/committee" element={<Committee />} />
             <Route path="/annual-functions" element={<AnnualFunctions />} />
+            <Route path="/annual-calendar" element={<AnnualCalendar />} />
             <Route path="/sevas" element={<Sevas />} />
             <Route path="/e-darshana" element={<EDarshana />} />
             <Route path="/e-donation" element={<EDonation />} />

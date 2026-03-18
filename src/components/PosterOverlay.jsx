@@ -4,11 +4,7 @@ import './PosterOverlay.css'
 const posters = [
   {
     id: 1,
-    image: '/images/Calendar/English.jpg',
-  },
-  {
-    id: 2,
-    image: '/images/Calendar/Kannada.jpg',
+    image: '/images/Upcoming/Ram Navami.jpg',
   },
 ]
 

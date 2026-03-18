@@ -28,14 +28,14 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo-section">
+        <Link to="/" className="logo-section" aria-label="Go to Home">
           <img
             src={logoSrc}
             alt="Shri Venkataramana Temple logo"
             className="logo-image"
           />
           <h1 className="logo-text">Shri Venkataramana Temple</h1>
-        </div>
+        </Link>
 
         <nav className="nav-desktop">
           <ul className="nav-list">
@@ -52,6 +52,7 @@ const Header = () => {
                 <ul className="dropdown-menu">
                   <li><Link to="/history">History</Link></li>
                   <li><Link to="/deities">Deities in the Garbhagraha</Link></li>
+                  <li><Link to="/annual-calendar">Annual Calendar 26-27</Link></li>
                   <li><Link to="/committee">Committee</Link></li>
                 </ul>
               )}
@@ -101,6 +102,7 @@ const Header = () => {
             <ul className="mobile-submenu">
               <li><Link to="/history" onClick={toggleMobileMenu}>History</Link></li>
               <li><Link to="/deities" onClick={toggleMobileMenu}>Deities in the Garbhagraha</Link></li>
+              <li><Link to="/annual-calendar" onClick={toggleMobileMenu}>Annual Calendar 26-27</Link></li>
               <li><Link to="/committee" onClick={toggleMobileMenu}>Committee</Link></li>
             </ul>
           </li>

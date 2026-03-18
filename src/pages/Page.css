@@ -1079,6 +1079,67 @@
   margin: 2rem auto 0;
 }
 
+/* Annual Calendar page styles */
+.calendar-slider {
+  max-width: 980px;
+  margin: 2rem auto 0;
+  position: relative;
+}
+
+.calendar-slides {
+  position: relative;
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--border-color);
+  background: var(--bg-white);
+}
+
+.calendar-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.calendar-slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.calendar-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background: var(--bg-white);
+}
+
+.calendar-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.calendar-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  padding: 0;
+}
+
+.calendar-dot.active {
+  width: 26px;
+  border-radius: 10px;
+  background: var(--primary-color);
+}
+
 .darshana-videos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
