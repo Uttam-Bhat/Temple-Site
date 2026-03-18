@@ -34,10 +34,19 @@
   animation: upcoming-marquee 10s linear infinite;
 }
 
+.upcoming-image-marquee:hover {
+  animation-play-state: paused;
+}
+
+.upcoming-image-marquee:hover .upcoming-image {
+  transform: scale(1.02);
+}
+
 .upcoming-image {
   display: block;
   width: 100%;
   height: auto;
+  transition: transform 0.25s ease;
 }
 
 @keyframes upcoming-marquee {

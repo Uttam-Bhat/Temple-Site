@@ -17,25 +17,25 @@ const Deities = () => {
     {
       id: 2,
       name: "Utsava Murthy",
-      image: "images/Murthy/Utsava Murthy(1).png",
+      image: "/images/Murthy/Utsava Murthy(1).png",
       description: "This is the Utsava Murthy of Lord Venkataramana, taken in procession during every Nagarotsava."
     },
     {
       id: 3,
       name: "Lord Shree Krishna",
-      image: "images/Murthy/Natya Krishna.png",
+      image: "/images/Murthy/Natya Krishna.png",
       description: ""
     },
     {
       id: 4,
       name: "Lord Vitobha",
-      image: "images/Murthy/Vitobha.png",
+      image: "/images/Murthy/Vitobha.png",
       description: ""
     },
     {
       id: 5,
       name: "Lord Venkataramana",
-      image: "images/Murthy/small venkataramana.png",
+      image: "/images/Murthy/small venkataramana.png",
       description: ""
     },
     {
@@ -47,7 +47,7 @@ const Deities = () => {
     {
       id: 7,
       name: "Shalagramas",
-      image: "images/Murthy/Saligram.png",
+      image: "/images/Murthy/Saligram.png",
       description: ""
     },
   ]
